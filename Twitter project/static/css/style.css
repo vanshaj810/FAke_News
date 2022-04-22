@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-image: url("bg.jpg");
+  background-repeat: no-repeat;
+}
+h1{
+  font-size: 50px;
+  color: #b22222;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+}
+
+h2{
+  font-size: 50px;
+  color: #3c17df;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+}
+
+input[type=text] {
+  background-color: #3CBC8D;
+  color: white;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+}

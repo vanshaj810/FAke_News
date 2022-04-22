@@ -1,0 +1,14 @@
+<html>
+<head>
+  <title>Fake News Detection</title>
+  <link rel="stylesheet" href="{{ url_for('static',filename='../static/css/style.css') }}">
+</head>
+<body>
+<h1> Fake News Detection </h1>
+</body>
+<h2>Insert news url</h2>
+<form method="POST" action="{{url_for('get_form')}}">
+  <input  name="text" placeholder="paste tweet here !">
+  <input type="submit">
+</form>
+</html>
