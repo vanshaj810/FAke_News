@@ -1,0 +1,51 @@
+<html>
+<head>
+  <title>Fake News Detection</title>
+  <link rel="stylesheet" href="{{ url_for('static',filename='../static/css/design_new.css') }}">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="navbar">
+  <ul>
+    <li>
+      <a href="#fact">Check</a>
+    </li>
+    <li>
+      <a href="#about">About</a>
+    </li>
+    <li>
+      <a href="#banner ">Home</a>
+    </li>
+  </ul>
+
+</div>
+
+<div class = "banner" id=banner>
+  <img src="{{ url_for('static',filename='../static/css/banner.png') }}"/>
+</div>
+  <div class="about" id="about">
+
+      <h1>About</h1>
+
+    <p>
+      Machine learning is the science of getting computers to act without being explicitly programmed.
+      In the past decade, machine learning has given us self-driving cars, practical speech recognition, effective web search,
+      and a vastly improved understanding of the human genome. Here we are using this rapidly growing technology to detect fake news
+      on the popular social media platform, Twitter.<br><br>
+      In this fake news detection project, we are using Supervised learning. We have trained our model with labeled examples so the machine
+      first learns from those examples and then performs the task on unseen data. Users can paste the tweet in the search box to check its credibility and we will tell you whether its fake or not.
+    </p>
+  </div>
+  <div class="fact" id="fact">
+    <h1>Fact-Check</h1>
+    <form action="{{url_for('get_form')}}" method="POST">
+      <input type="text" name="text" placeholder="Write the Text..." size="80">
+      <br>
+      <button class="b1">Predict</button>
+      <!-- <input type="submit"> -->
+      </form>
+  </div>
+
+</body>
+</html>
